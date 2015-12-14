@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Nav</title>
+        <link href="css/nav.css" rel="stylesheet" >
+    </head>
+    <body>
+       
+        
+        <ul class="nav">
+          <li><a href="#">選項1</a>
+              
+              <ul class="sub-nav">
+                 <li><a href="#">選項1-1</a></li>
+                 <li><a href="#">選項1-1</a></li>
+                 <li><a href="#">選項1-1</a></li>
+                 <li><a href="#">選項1-1</a></li>
+                
+              </ul>
+          
+          </li>
+            
+          <li><a href="#">選項2</a></li>
+            
+          <li><a href="#">選項3</a>
+            
+              <ul class="sub-nav">
+                 <li><a href="#">選項3-1</a></li>
+                 <li><a href="#">選項3-1</a></li>
+                 <li><a href="#">選項3-1</a></li>
+                 <li><a href="#">選項3-1</a></li>
+                
+              </ul>
+          </li>
+            
+          <li><a href="#">選項4</a></li>
+        </ul>
+        
+    
+    <script src="js/jquery.js" styp="text/javascript"></script>
+    <script src="js/hoverIntent.js" styp="text/javascript"></script>
+    <script src="js/superfish.js" styp="text/javascript"></script>
+        
+        
+    <script>
+
+	jQuery(document).ready(function(){
+		jQuery('ul.nav').superfish();
+	});
+
+</script>    
+    </body>
+</html>

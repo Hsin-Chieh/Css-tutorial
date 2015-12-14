@@ -1,0 +1,143 @@
+
+.solar-system{
+	height:900px;
+	position: relative;
+	
+}
+[class^="p"]{
+	position: absolute;
+	left:50%;
+	top:50%;
+	-webkit-transform: translate3d(-50%,-50%,0);
+}
+[class^="p"]:before{
+	content: "";
+	position: absolute;
+	top:0;
+	left:50%;
+	margin-top: -15px;
+	margin-left: -15px;
+	width: 30px;
+	height:30px;
+	background-color: #000;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.p0{
+	width:100px;
+	height: 100px;
+	border: 1px solid #ddd;
+	border-radius: 50%;
+	background: url(../images/0.png) no-repeat center center;
+	background-size: contain;
+	z-index: 10;
+	border: none;
+}
+.p0:before{
+	display: none;
+}
+
+.p1{
+	width:220px;
+	height: 220px;
+	border: 1px solid #ddd;
+	border-radius: 50%;
+	z-index: 9;
+	-webkit-animation: spin 5000ms linear infinite;
+	
+}
+.p1:before{
+	background: url(../images/1.png) no-repeat center center;
+	background-size: contain;
+}
+
+.p2{
+	width:360px;
+	height: 360px;
+	border: 1px solid #ddd;
+	border-radius: 50%;
+    z-index: 8;	
+    -webkit-animation: spin 6000ms linear infinite;
+}
+.p2:before{
+	background: url(../images/2.png) no-repeat center center;
+	background-size: contain;
+}
+
+.p3{
+	width:460px;
+	height: 460px;
+	border: 1px solid #ddd;
+	border-radius: 50%;
+	z-index: 7;	
+	-webkit-animation: spin 4000ms linear infinite;
+}
+.p3:before{
+	background: url(../images/3.png) no-repeat center center;
+	background-size: contain;
+}
+.p4{
+	width:570px;
+	height: 570px;
+	border: 1px solid #ddd;
+	border-radius: 50%;
+	z-index: 6;	
+	-webkit-animation: spin 8000ms linear infinite;
+}
+.p4:before{
+	background: url(../images/4.png) no-repeat center center;
+	background-size: contain;
+}
+
+.p5{
+	width:660px;
+	height: 660px;
+	border: 1px solid #ddd;
+	border-radius: 50%;
+	z-index: 5;	
+	-webkit-animation: spin 5000ms  400ms linear infinite;
+}
+.p5:before{
+	background: url(../images/5.png) no-repeat center center;
+	background-size: contain;
+}
+
+.p6{
+	width:750px;
+	height: 750px;
+	border: 1px solid #ddd;
+	border-radius: 50%;
+	z-index: 4;	
+	-webkit-animation: spin 7000ms linear infinite;
+}
+.p6:before{
+	width:50px;
+	height: 50px;
+	margin-top: -25px;
+	margin-left: -25px;
+	background: url(../images/6.png) no-repeat center center;
+	background-size: contain;
+}
+
+.p7{
+	width:860px;
+	height: 860px;
+	border: 1px solid #ddd;
+	border-radius: 50%;
+	z-index: 3;	
+	-webkit-animation: spin 8000ms linear infinite;
+}
+.p7:before{
+	background: url(../images/7.png) no-repeat center center;
+	background-size: contain;
+}
+
+
+@-webkit-keyframes spin{
+	from{
+		-webkit-transform: translate3d(-50%,-50%,0) rotate(0deg);
+	}
+	to{
+		-webkit-transform: translate3d(-50%,-50%,0) rotate(360deg);
+	}
+}

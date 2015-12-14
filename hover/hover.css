@@ -1,0 +1,11 @@
+.hover{
+height: 200px;
+width: 200px;
+background-color: deepskyblue;
+font-size: 24px;
+line-height: 8;
+text-align: center;
+}
+.hover:hover{
+background-color:cornflowerblue;
+}
